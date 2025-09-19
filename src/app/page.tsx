@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import CourseForm from "../../components/course-form";
-import CourseTable from "../../components/course-table";
-import GPASummary from "../../components/gpa-summary";
-import { calculateGPA } from "../../lib/gpa";
-import { Course } from "../../types/course";
+import CourseForm from "../components/course-form";
+import CourseTable from "../components/course-table";
+import GPASummary from "../components/gpa-summary";
+import { calculateGPA } from "@/lib/gpa";
+import { Course } from "../types/course";
 
 export default function Page() {
   const [courses, setCourses] = useState<Course[]>([]);

@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Course, CourseType } from "../types/course";
-import { curriculum } from "../data/curriculum";
+import { curriculum } from "@/data/curriculum";
 
 interface Props {
   onAdd: (course: Course) => void;
