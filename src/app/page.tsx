@@ -8,7 +8,6 @@ import { Course } from "../../types/course";
 
 export default function Page() {
   const [courses, setCourses] = useState<Course[]>([]);
-  const [academicYear, setAcademicYear] = useState<"2023" | "2024">("2023");
 
   const handleAddCourse = (course: Course) => {
     setCourses((prev) => [...prev, course]);
